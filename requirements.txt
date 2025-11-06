@@ -5,3 +5,5 @@ python-dotenv==1.2.1      # اختیاری، اگر از .env برای BOT_TOKEN
 magic-filter==1.0.0       # مورد نیاز داخلی aiogram (نسخه‌ی پیشنهادی)
 typing-extensions==4.8.0  # برای پشتیبانی تایپ‌ها در بعضی نسخه‌های پایتون
 uvloop==0.17.0            # اختیاری، شتاب‌دهنده event loop در لینوکس (اختیاری)
+pyTelegramBotAPI==4.29.1
+python-dotenv==1.2.1
