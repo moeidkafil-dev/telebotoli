@@ -1,9 +1,9 @@
 import json
 from aiogram import Bot, Dispatcher, types
-from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import logging
 import os
+import asyncio
 
 logging.basicConfig(level=logging.INFO)
 
@@ -74,5 +74,9 @@ async def set_link_cmd(msg: types.Message):
     set_link(new_link)
     await msg.answer("✅ لینک با موفقیت بروزرسانی شد!")
 
+
+async def main():
+    await dp.start_polling(bot, skip_updates=True)
+
 if __name__ == "__main__":
-    executor.start_polling(dp, skip_updates=True)
+    asyncio.run(main())
